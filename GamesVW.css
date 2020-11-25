@@ -316,7 +316,7 @@ nav li a:hover, nav .menu-btn:hover {
   font-size: 0;
 }
 #nomanssky-menu {
-  background: url("no-mans-sky-ship-scenery.jpg") no-repeat center;
+  background: url("") no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
