@@ -1,0 +1,522 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+}
+#overlay {
+  position: absolute;
+  background-color: transparent;
+  content: '';
+  width: 100%;
+  height: 550vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#main {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 0px;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  align-self: baseline;
+  background-color: #222;
+  position: relative;
+  height: 5%;
+  margin-top: auto;
+  overflow: hidden;
+}
+.copyright {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  border-top-width: 2px;
+  /* font family*/
+  overflow: hidden;
+}
+nav a {
+  color: #fff;
+}
+/* header */
+.hold {
+  height: 70px;
+}
+nav {
+  line-height: 30px;
+  transition: line-height 0.1s linear, box-shadow 0.1s linear;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+nav.small {
+  line-height: 5px;
+  background-color: #000;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+nav.small a {
+  color: #fff;
+}
+nav.small .logo {
+  font-size: 20px;
+}
+.scroll.hid {
+  visibility: hidden;
+}
+.scroll-2.hid {
+  visibility: hidden;
+}
+.scroll-3.hid {
+  visibility: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+nav li a {
+  display: block;
+  padding: 20px 20px;
+  /*border-right: 1px solid #f4f4f4;*/ /* border on the right of menu*/
+  text-decoration: none;
+}
+#drop-down:before {
+  display: flex;
+  flex-direction: column;
+}
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: relative;
+  z-index: 300;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+nav ul li:hover ~ #drop-down li {}
+nav li a:hover, nav .menu-btn:hover {
+  background-color: #9ECDE4;
+}
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55), 0px 4px 4px rgba(0, 0, 0, 0.55);
+  font-weight: normal;
+  padding: 20px 20px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* menu */
+nav .menu {
+  clear: both;
+  max-height: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: max-height .2s ease-out;
+}
+/* menu icon */
+nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+nav .menu-icon .nav-icon {
+  background: #333;
+  box-shadow: 0px 0px 0px 1px #fff;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+nav .menu-icon .nav-icon:before, nav .menu-icon .nav-icon:after {
+  background: #333;
+  box-shadow: 0px 0px 0px 1px #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+nav .menu-icon .nav-icon:before {
+  top: 5px;
+}
+nav .menu-icon .nav-icon:after {
+  top: -5px;
+}
+/* menu btn */
+nav .menu-btn {
+  display: none;
+}
+nav .menu-btn:checked ~ .menu {
+  max-height: 340px;
+  background-color: rgba(0, 0, 0, .5);
+}
+nav .menu-btn:checked ~ nav {
+  background-color: rgba(0, 0, 0, .5);
+}
+nav .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+nav li a:hover, nav .menu-btn:hover {
+  background-color: rgba(130, 165, 197, 0.41);
+}
+.container {
+  height: 110vh;
+  box-shadow: 90px 1px 4px 0 rgba(0, 0, 0, 1);
+  position: relative;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  background-color: #fff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+/*
+  Slider
+*/
+.swiper-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.swiper-slide {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+}
+.swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.fixed {
+  z-index: -1;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#notfixed {
+  z-index: 10;
+  position: relative;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#leftarrow {
+  z-index: 100;
+  position: fixed;
+  left: 1;
+}
+#rightarrow {
+  z-index: 100;
+  position: fixed;
+  right: 1;
+}
+.swiper-button-prev {
+  position: fixed;
+  z-index: 1000;
+  scroll-behavior: none;
+}
+.swiper-button-next {
+  position: fixed;
+  z-index: 1000;
+  scroll-behavior: none;
+}
+#genshin {
+  background: url("https://media.giphy.com/media/WBbAcYtvOgjZaTF966/giphy.gif") no-repeat center;
+  background-size: cover;
+}
+#minecraft {
+  background: url("images/minecraft.gif") no-repeat center;
+  background-size: cover;
+}
+#nomanssky {
+  background: url("images/no-mans-sky.gif") no-repeat center;
+  background-size: cover;
+}
+#genshin-content-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#minecraft-content-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nomanssky-content-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#genshin-menu {
+  background: url("images/l1x2qg3by1v51.jpg") no-repeat center;
+  background-position: 100% 100%;
+  background-size: 120% 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  font-size: 0;
+}
+#minecraft-menu {
+  background: url("images/gBTtcZ.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  font-size: 0;
+}
+#nomanssky-menu {
+  background: url("images/no-mans-sky-ship-scenery.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  font-size: 0;
+}
+section {
+  scroll-snap-align: center;
+}
+.empty {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+.scroll {
+  position: relative;
+  font-size: 20px;
+  top: 90%;
+  color: #fff;
+  text-shadow: 0px 0px 1px gray;
+}
+.game-logo-section {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: center;
+}
+.game-logo {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 30vh;
+  top: 40vh;
+}
+#minecraft-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 35vh;
+  scroll-snap-align: center;
+}
+.video {
+  display: block;
+  height: 100vh;
+}
+iframe {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 43%;
+  top: 40vh;
+}
+.rating {
+  display: block;
+  height: 150vh;
+}
+.rating-content {
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  text-align: center;
+  width: 44%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto; 
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*menu */
+.virtual-worlds {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 5%;
+}
+.virtual-worlds-des {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40%;
+  padding: 1%;
+  font-size: 18px;
+  margin-top: 3%;
+}
+.virtual-worlds-des p {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+.call span:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.social-menu {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #868686;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.social-menu ul {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077B5;
+}
+@media (min-width: 48em) {
+  /* SLIDER */
+  .container {
+    height: 110vh;
+    box-shadow: 90px 1px 4px 0 rgba(0, 0, 0, 1);
+    position: relative;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+    background-color: #fff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  iframe {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 38%;
+    top: 40vh;
+    z-index: 1000;
+  }
+  #genshin-menu {
+    background: url("images/l1x2qg3by1v51.jpg") no-repeat center;
+    background-size: 100% 100%;
+    background-position: 120% 100%;
+  }
+  #minecraft-menu {
+    background: url("images/gBTtcZ.png") no-repeat center;
+    background-size: cover;
+  }
+  #nomanssky-menu {
+    background: url("images/no-mans-sky-ship-scenery.jpg") no-repeat center;
+    background-size: cover;
+  }
+}

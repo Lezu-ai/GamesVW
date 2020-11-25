@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="Contact.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">	
+</head>
+<body>
+<div id = "main">
+	
+  <nav class="nav">
+	<a href="GamesVW.html" class="logo">GamesVW</a>
+ <!-- Menu Btn below @media 48em -->
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+      <li id= "games-menu-li"><a href="#" id="games">Games</a>
+ <!-- First Tier Drop Down -->
+		    <ul id="drop-down">
+                <li><a href="Genshin Impact.html">Genshin Impact</a></li>
+                <li><a href="Minecraft.html">Minecraft</a></li>
+                <li><a href="No Man's Sky.html">No Man's Sky</a></li>
+            </ul>  
+	  </li>
+      <li id="contact-li"><a href="contact.html" id="contact">Contact</a></li>
+    </ul>
+  </nav>
+<!-- HERO -->
+<div id="parallax-1">
+</div>
+<section id="contact-section">
+  
+  <h1 class="contact-header">CONTACT</h1>
+  
+  <div class="contact-wrapper">
+    
+      <!---------------- 
+
+      CONTACT PAGE LEFT 
+    
+      -----------------> 
+    
+    <form class="form-horizontal" role="form" method="post" action="contact.php">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+      <!---------------- 
+
+      CONTACT PAGE RIGHT 
+    
+      -----------------> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">New York | NY</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
+          
+        </ul>
+      </div>
+    
+  </div>
+  
+</section>  
+  
+  
+</div>
+<div id="social">
+  <div class="social-menu">
+    <ul>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</div>
+<footer id= "footer">
+  <div class="copyright">&copy;2020 - <strong>Lenin Zuna's Theme</strong></div>
+</footer>
+<script src="swiper-bundle.js"></script> 
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+      spaceBetween: 20,
+	  loop: true,
+	  slidesPerView: 3,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });	
+
+</script>
+</body>
+<script>
+window.onscroll = function() {
+  var el = document.getElementsByClassName('nav')[0];
+  var className = 'small';
+  if (el.classList) {
+    if (window.scrollY > 1)
+      el.classList.add(className);
+    else
+      el.classList.remove(className);
+  }
+};
+</script>
+</html>

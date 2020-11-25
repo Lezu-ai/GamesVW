@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GamesVW</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="swiper-bundle.css" type="text/css">
+<link rel="stylesheet" href="GamesVW.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+
+<body>
+<div id = "main">
+  <div class="swiper-button-prev" id="leftarrow"></div>
+  <div class="swiper-button-next" id="rightarrow"></div>
+  <nav class="nav"> <a href="GamesVW.html" class="logo">GamesVW</a> 
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+      <li id= "games-menu-li"><a href="#" id="games">Games</a> 
+        <ul id="drop-down">
+          <li><a href="Genshin Impact.html">Genshin Impact</a> <a href="Minecraft.html">Minecraft</a> <a href="No Man's Sky.html">No Man's Sky</a></li>
+        </ul>
+      </li>
+      <li id="contact-li"><a href="contact.html" id="contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Slider main container -->
+  <div class="swiper-container fixed"> 
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper"> 
+      <!-- Slides -->
+      <div class="swiper-slide" id="genshin"></div>
+      <div class="swiper-slide" id="minecraft"></div>
+      <div class="swiper-slide" id="nomanssky"></div>
+    </div>
+    <!-- If we need navigation buttons --> 
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="genshin-content-slide">
+        <section class="empty"><h1 class="scroll">SCROLL</h1></section>
+        <section class="game-logo-section"><img src="images/Genshin Impact Logo.png" alt="genshin-impact-logo" class="game-logo"></section>
+        <section class="video">
+          <iframe width="475" height="315" src="https://www.youtube.com/embed/HLUY1nICQRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="rating">
+          <p class="rating-content"> "a world that is absolutely bursting at the seams with possibilities." -IGN</p>
+        </section>
+      </div>
+      <div class="swiper-slide" id="minecraft-content-slide">
+        <section class="empty"><h1 class="scroll scroll-2">SCROLL</h1></section>
+        <section class="game-logo-section"><img src="images/15-2-minecraft-logo-png.png" alt="minecraft-impact-logo" class="game-logo" id="minecraft-img" width="60%"></section>
+        <section class="video">
+          <iframe width="475" height="315" src="https://www.youtube.com/embed/1DhWXAiNgfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="rating">
+          <p class="rating-content">"intuitively interesting and contagiously fun"- PC Gamer</p>
+        </section>
+      </div>
+      <div class="swiper-slide" id="nomanssky-content-slide">
+        <section class="empty"><h1 class="scroll scroll-3">SCROLL</h1></section>
+        <section class="game-logo-section"><img src="images/no-mans-sky-title-img.png" alt="nomanssky-impact-logo" class="game-logo"></section>
+        <section class="video">
+          <iframe width="475" height="315" src="https://www.youtube.com/embed/ifZA6IMeLs8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="rating">
+         <p class="rating-content">“No Man’s Sky vividly realizes the meaningless emptiness of space” - Quarter to three</p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="container"> 
+    
+    <!-- Menu -->
+    <div class="swiper-container swiper-cotainer-2" id="notfixed"> 
+      <!-- Additional required wrapper -->
+      
+      <div class="swiper-wrapper"> 
+        <!-- Slides -->
+        <div class="swiper-slide" id="genshin-menu">
+          <h1 class="virtual-worlds">Virtual Worlds</h1>
+          <div class="virtual-worlds-des">
+            <p>The Online world is very different from our own, with rules, new races, and new ways of living. There are, however, some similarities- take a look at our breakdown of the worlds biggest virtual worlds to find out how they measure up against real life.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" id="minecraft-menu">
+          <h1 class="virtual-worlds">Virtual Worlds</h1>
+          <div class="virtual-worlds-des">
+            <p>The Online world is very different from our own, with rules, new races, and new ways of living. There are, however, some similarities- take a look at our breakdown of the worlds biggest virtual worlds to find out how they measure up against real life.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" id="nomanssky-menu">
+          <h1 class="virtual-worlds">Virtual Worlds</h1>
+          <div class="virtual-worlds-des">
+            <p>The Online world is very different from our own, with rules, new races, and new ways of living. There are, however, some similarities- take a look at our breakdown of the worlds biggest virtual worlds to find out how they measure up against real life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="social">
+  <div class="social-menu">
+    <ul>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</div>
+<footer id= "footer">
+  <div class="copyright">&copy;2020 - <strong>Lenin Zuna's Theme</strong></div>
+</footer>
+<script src="swiper-bundle.js"></script> 
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+	
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+	keyboard: true,
+})	
+
+fixedL.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);		
+</script>
+</body>
+<script>
+window.onscroll = function() {
+  var el = document.getElementsByClassName('nav')[0];
+  var scrll = document.getElementsByClassName('scroll')[0];
+  var scrll2 = document.getElementsByClassName('scroll-2')[0];
+  var scrll3 = document.getElementsByClassName('scroll-3')[0];
+  var className = 'small';
+  var className1 = 'hid';
+  var className2= 'hid';
+  var className3= 'hid';	
+  if (el.classList) {
+    if (window.scrollY > 3000)
+      el.classList.add(className);
+    else
+      el.classList.remove(className);
+  }
+    if (scrll.classList) {
+    if (window.scrollY > 15)  
+      scrll.classList.add(className1);
+    else
+      scrll.classList.remove(className1);
+  }    
+	if (scrll2.classList) {
+    if (window.scrollY > 15)  
+      scrll2.classList.add(className2);
+    else
+      scrll2.classList.remove(className2);
+  }    
+	if (scrll3.classList) {
+    if (window.scrollY > 15)  
+      scrll3.classList.add(className3);
+    else
+      scrll3.classList.remove(className3);
+  }
+};
+</script>
+</html>
