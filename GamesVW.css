@@ -271,11 +271,11 @@ nav li a:hover, nav .menu-btn:hover {
   background-size: cover;
 }
 #minecraft {
-  background: url("images/minecraft.gif") no-repeat center;
+  background: url("minecraft.gif") no-repeat center;
   background-size: cover;
 }
 #nomanssky {
-  background: url("images/no-mans-sky.gif") no-repeat center;
+  background: url("no-mans-sky.gif") no-repeat center;
   background-size: cover;
 }
 #genshin-content-slide {
@@ -297,7 +297,7 @@ nav li a:hover, nav .menu-btn:hover {
   align-items: center;
 }
 #genshin-menu {
-  background: url("images/l1x2qg3by1v51.jpg") no-repeat center;
+  background: url("l1x2qg3by1v51.jpg") no-repeat center;
   background-position: 100% 100%;
   background-size: 120% 100%;
   display: flex;
@@ -307,7 +307,7 @@ nav li a:hover, nav .menu-btn:hover {
   font-size: 0;
 }
 #minecraft-menu {
-  background: url("images/gBTtcZ.png") no-repeat center;
+  background: url("gBTtcZ.png") no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
@@ -316,7 +316,7 @@ nav li a:hover, nav .menu-btn:hover {
   font-size: 0;
 }
 #nomanssky-menu {
-  background: url("images/no-mans-sky-ship-scenery.jpg") no-repeat center;
+  background: url("no-mans-sky-ship-scenery.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
@@ -507,16 +507,16 @@ iframe {
     z-index: 1000;
   }
   #genshin-menu {
-    background: url("images/l1x2qg3by1v51.jpg") no-repeat center;
+    background: url("l1x2qg3by1v51.jpg") no-repeat center;
     background-size: 100% 100%;
     background-position: 120% 100%;
   }
   #minecraft-menu {
-    background: url("images/gBTtcZ.png") no-repeat center;
+    background: url("gBTtcZ.png") no-repeat center;
     background-size: cover;
   }
   #nomanssky-menu {
-    background: url("images/no-mans-sky-ship-scenery.jpg") no-repeat center;
+    background: url("/no-mans-sky-ship-scenery.jpg") no-repeat center;
     background-size: cover;
   }
 }
