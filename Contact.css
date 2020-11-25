@@ -191,7 +191,7 @@ nav li a:hover, nav .menu-btn:hover {
 /*hero*/
 #parallax-1 {
   /* The image used */
-  background: url("images/69af7c3756ec214b0148412144d4c76b_5318117819164769281.png") no-repeat center;
+  background: url("69af7c3756ec214b0148412144d4c76b_5318117819164769281.png") no-repeat center;
   /* Set a specific height */
   height: 100vh;
   /* Create the parallax scrolling effect */
