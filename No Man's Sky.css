@@ -190,7 +190,7 @@ nav li a:hover, nav .menu-btn:hover {
 /*hero*/
 #parallax-1 {
   /* The image used */
-  background: url("images/no-mans-sky.gif") no-repeat center;
+  background: url("no-mans-sky.gif") no-repeat center;
   /* Set a specific height */
   height: 100vh;
   /* Create the parallax scrolling effect */
@@ -201,7 +201,7 @@ nav li a:hover, nav .menu-btn:hover {
 }
 #parallax-2 {
   /* The image used */
-  background: url("images/Derelict-Freighter-no-mans-sky1-1280x720.jpg") center;
+  background: url("Derelict-Freighter-no-mans-sky1-1280x720.jpg") center;
   
   /* Set a specific height */
   height: 120vh;
@@ -420,19 +420,19 @@ border-radius: 10px;
 	
 }
 .swiper-slide:nth-child(4n+1) {
-background: url("images/145268-games-feature-amazing-photos-of-space-as-captured-in-no-mans-sky-image1-jrl4v3cbke.jpg") no-repeat center;
+background: url("145268-games-feature-amazing-photos-of-space-as-captured-in-no-mans-sky-image1-jrl4v3cbke.jpg") no-repeat center;
 background-size: cover;
 }
 .swiper-slide:nth-child(4n+2) {
-background: url("images/Derelict-Freighter-no-mans-sky1-1280x720.jpg") no-repeat center;	
+background: url("Derelict-Freighter-no-mans-sky1-1280x720.jpg") no-repeat center;	
 background-size: cover;
 }
 .swiper-slide:nth-child(4n+3) {
-background: url("images/No-Mans-Sky-Next-Gen-Living-Ship.jpg") no-repeat center;	
+background: url("/No-Mans-Sky-Next-Gen-Living-Ship.jpg") no-repeat center;	
 background-size: cover;
 }
 .swiper-slide:nth-child(4n+4) {
-background: url("images/t9oJ9QXYc2PHdFPwx4BdhT-1200-80.jpg") no-repeat center;
+background: url("t9oJ9QXYc2PHdFPwx4BdhT-1200-80.jpg") no-repeat center;
 background-size: cover;
 }
 
